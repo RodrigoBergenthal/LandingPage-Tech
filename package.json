@@ -4,7 +4,7 @@
   "scripts": {
     "clean": "rm -rf .parcel-cache dist",
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
-    "build":"parcel build src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,5 +15,8 @@
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0",
     "sharp": "^0.31.3"
+  },
+  "dependencies": {
+    "sass": "^1.80.6"
   }
 }
