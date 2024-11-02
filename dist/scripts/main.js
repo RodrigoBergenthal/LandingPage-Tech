@@ -584,6 +584,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"3cYfC":[function(require,module,exports) {
+AOS.init();
 
 },{}]},["8bDoD","3cYfC"], "3cYfC", "parcelRequire62d0")
 
