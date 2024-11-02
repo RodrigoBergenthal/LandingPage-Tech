@@ -16,6 +16,13 @@
     "parcel": "^2.12.0",
     "sharp": "^0.31.3"
   },
+  "engines": {
+    "node": "18.x"
+  },
+  "cacheDirectories": [
+    ".parcel-cache",
+    "node_modules"
+  ],
   "dependencies": {
     "sass": "^1.80.6"
   }
