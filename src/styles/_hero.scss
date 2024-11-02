@@ -10,17 +10,26 @@
 
     .container {
         position: relative;
+        z-index: 2;
+    }
+
+    &__video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        z-index: 1;
     }
 
     &::before {
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: variables.$secondaryTextColor;
-        content: '';
-        opacity: .7;
+        background-color: rgba(40, 37, 37, 0.7); 
+        z-index: 0;
     }
 
     &__text {
@@ -28,21 +37,27 @@
         margin-bottom: 64px;
         font-size: 40px;
         line-height: 56px;
-        font-weight: 800;
+        font-weight: bold;
         text-align: center;
+        color: variables.$textColor; /* Ajuste a cor do texto */
     }
 
     &__logo {
-        margin: 0 auto;
-        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         display: block;
+        z-index: -1;
     }
 
     @media (max-width: 640px) {
         padding: 40px 0;
 
-        &__logo {
-            height: 40px;
+        &__video {
+            height: auto;
         }
 
         &__text {
